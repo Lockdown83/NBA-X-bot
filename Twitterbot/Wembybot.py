@@ -24,7 +24,6 @@ def fetch_wembanyama_stats():
     return 0
 
 def check_and_tweet():
-    points = fetch_wembanyama_stats()
     if points >= 90:  # Check if points are close to 100
         api.update_status(f"🚨 Warning: Victor Wembanyama has scored {points} points! He is close to breaking Wilt Chamberlain's 100-point record! 🚨")
 
